@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Gradient Background</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Gradient Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id = "gradient">
-	<h1>Background Generator</h1>
-	<input class = "color1" type="color" name="color1" value = "#ff0000">
-	<input class = "color2" type="color" name="color2" value = "#ffff00">
-	<h2>Current CSS Background</h2>
-	<h3></h3>
-	<script type="text/javascript" src = "script.js"></script>
+<body id="gradient">
+    <main class="container">
+        <h1>Gradient Generator</h1>
+        
+        <div class="controls">
+            <div class="color-picker-wrapper">
+                <input class="color1" type="color" name="color1" value="#0f0c1b">
+                <input class="color2" type="color" name="color2" value="#24243e">
+            </div>
+            
+            <button id="random" type="button">Randomize</button>
+        </div>
+
+        <h2>Current CSS Background</h2>
+        <div class="output-box">
+            <h3 id="css-output"></h3>
+            <button id="copy" type="button">Copy Code</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
